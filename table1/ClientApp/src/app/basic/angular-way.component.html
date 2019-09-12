@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 m9 l12">
+      <div class="section">
+        <div id="preview" class="col s12 m9 l12">
+          <h4 class="header">Preview</h4>
+          <table [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>First name</th>
+                <th>Last name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let person of persons">
+                <td>{{ person.id }}</td>
+                <td>{{ person.firstName }}</td>
+                <td>{{ person.lastName }}</td>
+              </tr>
+            </tbody>
+          </table>         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

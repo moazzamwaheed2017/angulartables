@@ -1,0 +1,52 @@
+<header>
+    <div class="container">
+        <a href="#" (click)="$event.preventDefault()" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+            <i class="material-icons">menu</i>
+        </a>
+    </div>
+
+    <ul id="nav-mobile" class="side-nav fixed">
+        
+        
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li class="bold">
+                    <a class="collapsible-header waves-effect waves-teal">Basic examples</a>
+                    <div class="collapsible-body">
+                        <ul>                            
+                            <li>
+                                <a routerLink="/basic/angular-way">Angular way</a>
+                            </li>
+                            <li>
+                                <a routerLink="/basic/server-side-angular-way">Server side the Angular way</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>            
+                <li class="bold">
+                    <a class="collapsible-header waves-effect waves-teal">Using DT extensions</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li>
+                                <a routerLink="/extensions/buttons">Buttons extension</a>
+                            </li>
+                            <li>
+                                <a routerLink="/extensions/colreorder">ColReorder extension</a>
+                            </li>
+                            <li>
+                                <a routerLink="/extensions/responsive">Responsive extension</a>
+                            </li>
+                            <li>
+                                <a routerLink="/extensions/select">Select extension</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</header>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
